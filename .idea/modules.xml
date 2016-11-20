@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/computer-database-cli/computer-database-cli.iml" filepath="$PROJECT_DIR$/computer-database-cli/computer-database-cli.iml" />
+      <module fileurl="file://$PROJECT_DIR$/persistence/persistence.iml" filepath="$PROJECT_DIR$/persistence/persistence.iml" />
       <module fileurl="file://$PROJECT_DIR$/training-java-master.iml" filepath="$PROJECT_DIR$/training-java-master.iml" />
     </modules>
   </component>

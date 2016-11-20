@@ -18,5 +18,9 @@
         <processorPath useClasspath="true" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="computer-database-cli" target="" />
+      <module name="persistence" target="" />
+    </bytecodeTargetLevel>
   </component>
 </project>

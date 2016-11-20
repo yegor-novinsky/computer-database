@@ -1,16 +1,17 @@
 package dao;
 
 import model.CompanyEntity;
+import model.ComputerEntity;
 import org.hibernate.Session;
 
 import javax.persistence.EntityManager;
 import java.util.List;
 
 /**
- * Implementation for the CompanyDao interface
+ * Implementation for the EntityDao interface
  * @author yegor
  */
-public class CompanyDaoImpl implements CompanyDao {
+public class CompanyDaoImpl implements EntityDao<CompanyEntity> {
 
     private final EntityManager entityManager;
 

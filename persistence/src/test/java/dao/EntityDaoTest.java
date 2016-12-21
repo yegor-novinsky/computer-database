@@ -42,6 +42,13 @@ public class EntityDaoTest {
 
     @Test
     public void find() throws Exception {
+        ComputerEntity firstComputer = (ComputerEntity) computerDao.find(firstComputerName);
+        if (firstComputer == null) {
+            add();
+            firstComputer = (ComputerEntity) computerDao.find(firstComputerName);
+
+            assertEquals(firstComputerName, firstComputer.getName());
+        }
 
     }
 
@@ -59,10 +66,12 @@ public class EntityDaoTest {
 
         CompanyEntity company = findCreateFirstCompany();
 
-        computerDao.add(new ComputerEntity(firstComputerName,
-                introductionDate,
-                discontinuingDate,
-                company));
+        if (computerDao.find(firstComputerName) == null) {
+            computerDao.add(new ComputerEntity(firstComputerName,
+                    introductionDate,
+                    discontinuingDate,
+                    company));
+        }
     }
 
     @Test
